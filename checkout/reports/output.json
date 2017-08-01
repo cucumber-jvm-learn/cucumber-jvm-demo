@@ -1,0 +1,335 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Checkout a banana",
+        "description": "",
+        "id": "checkout;checkout-a-banana;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 81669540,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the price of a \"banana\" is 40c",
+            "match": {
+              "arguments": [
+                {
+                  "val": "banana",
+                  "offset": 16
+                },
+                {
+                  "val": "40",
+                  "offset": 27
+                }
+              ],
+              "location": "CheckoutSteps.thePriceOfAIsC(String,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 139459,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I checkout 1 \"banana\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 11
+                },
+                {
+                  "val": "banana",
+                  "offset": 14
+                }
+              ],
+              "location": "CheckoutSteps.iCheckout(int,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1689636,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the total price should be 40c",
+            "match": {
+              "arguments": [
+                {
+                  "val": "40",
+                  "offset": 26
+                }
+              ],
+              "location": "CheckoutSteps.theTotalPriceShouldBeC(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Checkout a banana",
+        "description": "",
+        "id": "checkout;checkout-a-banana;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 138588,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the price of a \"banana\" is 40c",
+            "match": {
+              "arguments": [
+                {
+                  "val": "banana",
+                  "offset": 16
+                },
+                {
+                  "val": "40",
+                  "offset": 27
+                }
+              ],
+              "location": "CheckoutSteps.thePriceOfAIsC(String,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 109855,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I checkout 2 \"banana\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 11
+                },
+                {
+                  "val": "banana",
+                  "offset": 14
+                }
+              ],
+              "location": "CheckoutSteps.iCheckout(int,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97906,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the total price should be 80c",
+            "match": {
+              "arguments": [
+                {
+                  "val": "80",
+                  "offset": 26
+                }
+              ],
+              "location": "CheckoutSteps.theTotalPriceShouldBeC(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Checkout",
+    "description": "",
+    "id": "checkout",
+    "keyword": "Feature",
+    "uri": "checkout.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Checkout a banana",
+        "description": "",
+        "id": "checkout001;checkout-a-banana;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 106057,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the price of a \"banana\" is 40c",
+            "match": {
+              "arguments": [
+                {
+                  "val": "banana",
+                  "offset": 16
+                },
+                {
+                  "val": "40",
+                  "offset": 27
+                }
+              ],
+              "location": "CheckoutSteps.thePriceOfAIsC(String,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 89181,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I checkout 3 \"banana\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 11
+                },
+                {
+                  "val": "banana",
+                  "offset": 14
+                }
+              ],
+              "location": "CheckoutSteps.iCheckout(int,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 441669,
+              "error_message": "java.lang.AssertionError: expected:\u003c40\u003e but was:\u003c120\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat org.junit.Assert.assertEquals(Assert.java:631)\n\tat step_definitions.CheckoutSteps.theTotalPriceShouldBeC(CheckoutSteps.java:27)\n\tat ✽.Then the total price should be 40c(checkout001.feature:5)\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "the total price should be 40c",
+            "match": {
+              "arguments": [
+                {
+                  "val": "40",
+                  "offset": 26
+                }
+              ],
+              "location": "CheckoutSteps.theTotalPriceShouldBeC(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Checkout a banana",
+        "description": "",
+        "id": "checkout001;checkout-a-banana;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 121688,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the price of a \"banana\" is 40c",
+            "match": {
+              "arguments": [
+                {
+                  "val": "banana",
+                  "offset": 16
+                },
+                {
+                  "val": "40",
+                  "offset": 27
+                }
+              ],
+              "location": "CheckoutSteps.thePriceOfAIsC(String,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78285,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I checkout 4 \"banana\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 11
+                },
+                {
+                  "val": "banana",
+                  "offset": 14
+                }
+              ],
+              "location": "CheckoutSteps.iCheckout(int,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97992,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the total price should be 160c",
+            "match": {
+              "arguments": [
+                {
+                  "val": "160",
+                  "offset": 26
+                }
+              ],
+              "location": "CheckoutSteps.theTotalPriceShouldBeC(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Checkout001",
+    "description": "",
+    "id": "checkout001",
+    "keyword": "Feature",
+    "uri": "checkout001.feature"
+  }
+]
